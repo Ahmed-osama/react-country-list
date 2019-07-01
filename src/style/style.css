@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Literata&display=swap");
+* {
+  font-family: "Literata", serif;
+}
+.countryListItem {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 10px 20px;
+}
+.countryListItem__img {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+.countryListItem__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.countryListItem__content strong {
+  font-size: 20px;
+}
+.countryListItem__content p {
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #616161;
+}
+.countryListItem__cta {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  border: none;
+  appearance: auto;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0 15px;
+  cursor: pointer;
+  align-self: center;
+  flex-basis: 125px;
+  min-width: 125px;
+}
+.countryListItem__cta:hover {
+  background: rgba(0, 0, 0, 0.07);
+}
+
+.countryListItem--mega {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.countryListItem--mega .countryListItem__content strong {
+  font-size: 30px;
+}
+.countryListItem--mega .countryListItem__content p {
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #616161;
+}
+
+.countryListItem--mega .countryListItem__img {
+  margin-right: 0;
+  width: 64px;
+  height: 64px;
+  margin-top: 0;
+  border-radius: 3px;
+}
+
+.App {
+  max-width: 500px;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.countrySearch {
+  display: flex;
+  padding: 10px;
+}
+.countrySearch input {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
+  padding: 10px;
+  height: 40px;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  min-height: 200px;
+}
+.loading img {
+  max-width: 100px;
+}
