@@ -19,10 +19,15 @@ class App extends Component {
     const viewList = countryListFiltered || countryList;
     return (
       <div className="App">
-        <h1>country list App</h1>
-        <CountrySearch />
+        <h1 className="title">country list App</h1>
         {selectedCountry && <CountryListItem country={selectedCountry} mega />}
-        {loading && <p> Loading....</p>}
+        <CountrySearch />
+        {loading && (
+          <div className="loading">
+            {" "}
+            <img src="https://www.vinodpatel.com.fj/pub/static/frontend/vpcl/theme_child/en_US/images/loading.gif" />
+          </div>
+        )}
         {!loading &&
           viewList.map(country => (
             <CountryListItem

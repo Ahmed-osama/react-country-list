@@ -1,5 +1,4 @@
 export const conutryListReducer = (state = {}, action) => {
-  debugger;
   const countryListActions = {
     FIND_COUNTRY: () => ({
       selectedCountry: state.countryHash[action.value]
